@@ -14,3 +14,10 @@ Possible requests:
 * **`GET`** `/appointments/<id>` - get <id> appointment
 * **`DELETE`** `/appointments/<id>` - delete <id> appointment
 * **`POST`** `/appointments/` - creates a record and return id of record
+    BODY:
+    ```json
+    {
+      "name": String,
+      "disease": String
+    }
+    ```
