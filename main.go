@@ -1,11 +1,11 @@
 package main
 
 import (
+	"appointments-rest-api/storage"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
-	"web/storage"
 )
 
 type AppointmentsServer struct {
@@ -79,5 +79,5 @@ func main() {
 	router.DELETE("/appointments/:id", appointmentsServer.deleteAppointmentHandler)
 	router.GET("/appointments/", appointmentsServer.getAllAppointments)
 
-	router.Run("localhost:" + "8888")
+	router.Run("0.0.0.0:" + "8080")
 }

@@ -1,4 +1,4 @@
-module web
+module appointments-rest-api
 
 go 1.18
 
